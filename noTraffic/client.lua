@@ -1,8 +1,10 @@
 Citizen.CreateThread(function()
         while true do
-                Citizen.Wait(2)
+                SetPedDensityMultiplierThisFrame(0.0)
+                SetScenarioPedDensityMultiplierThisFrame(0.0, 0.0)
                 SetVehicleDensityMultiplierThisFrame(0.0)
-                --0.0 is no vehicles
-                --1.0 is max vehicles
+                SetRandomVehicleDensityMultiplierThisFrame(0.0)
+                SetParkedVehicleDensityMultiplierThisFrame(0.0)
+                Citizen.Wait(0)
         end
 end)
